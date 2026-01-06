@@ -7,6 +7,8 @@ This project was developed in **two versions**:
 
 The goal of this project was to solve a real-world problem while demonstrating clean logic, modular design, and adaptability across platforms.
 
+**Check it out Web version here:** [https://britneylu.github.io/She-Innovates-2024/](https://britneylu.github.io/She-Innovates-2024/)
+
 ---
 
 ## Project Overview
