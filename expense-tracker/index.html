@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="icon" type="image/png" href="./savings_app.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <!-- Setup -->
+        <div class="card">
+            <label>Total Semester Budget ($)</label>
+            <input type="number" id="budgetInput" placeholder="e.g. 6000" />
+            <button onclick="setBudget()">Start Tracking</button>
+        </div>
+
+        <!-- Add Expense -->
+        <div class="card hidden" id="expenseSection">
+            <h2>Add Expense</h2>
+
+            <select id="category">
+                <option>Food</option>
+                <option>Transportation</option>
+                <option>Entertainment</option>
+                <option>School Supplies</option>
+                <option>Other</option>
+            </select>
+
+            <input type="number" id="amount" placeholder="Amount ($)" />
+            <button onclick="addExpense()">Add</button>
+        </div>
+
+        <!-- Summary -->
+        <div class="card hidden" id="summary">
+            <h2>Summary</h2>
+            <p><strong>Remaining Balance:</strong> $<span id="balance">0</span></p>
+            <p><strong>Total Spent:</strong> $<span id="spent">0</span></p>
+        </div>
+
+        <!-- Breakdown -->
+        <div class="card hidden" id="breakdown">
+            <h2>Category Breakdown</h2>
+            <ul id="categoryList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
